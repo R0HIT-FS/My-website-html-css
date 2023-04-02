@@ -1,0 +1,45 @@
+.under{
+    position: relative;
+}
+.under::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    height: 3px;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.under:hover::after{
+    transform-origin: left;
+    transform:scale(1);
+}
+
+
+.picture img{
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+     15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill{
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 
+                15px 15px 15px rgba(0, 0, 0, 0.1), 
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2), 
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.skill:hover{
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+     15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img1 img:hover{
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+     15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.img2 img:hover{
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+     15px 15px 15px rgba(0, 0, 0, 0.1);
+}
